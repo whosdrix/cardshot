@@ -1,0 +1,65 @@
+{
+  "name": "cardshot",
+  "version": "0.1.0",
+  "description": "Self-hosted OG images and website screenshots. One container, two endpoints, beautiful templates.",
+  "license": "MIT",
+  "author": "whosdrix",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whosdrix/cardshot.git"
+  },
+  "homepage": "https://github.com/whosdrix/cardshot#readme",
+  "bugs": "https://github.com/whosdrix/cardshot/issues",
+  "keywords": [
+    "og-image",
+    "open-graph",
+    "screenshot",
+    "social-cards",
+    "satori",
+    "playwright",
+    "self-hosted"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "cardshot": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/index.js",
+    "sign": "tsx src/cli.ts sign",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@hono/node-server": "^2.1.11",
+    "@resvg/resvg-js": "^2.6.2",
+    "hono": "^4.13.23",
+    "playwright-core": "^1.65.1",
+    "react": "^19.3.1",
+    "satori": "^0.63.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.9",
+    "@types/node": "^22.20.7",
+    "@types/react": "^19.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.2"
+  },
+  "overrides": {
+    "fflate": "^0.8.3"
+  }
+}
