@@ -39,7 +39,7 @@ Every page you publish needs a social card, and plenty of apps need screenshots.
 
 cardshot is one small service you run yourself:
 
-- **`/og`** renders social cards from templates in about 60 ms, using [Satori](https://github.com/vercel/satori) and [resvg](https://github.com/yisibl/resvg-js). No browser involved.
+- **`/og`** renders social cards from templates in about 60 ms, using [Satori](https://github.com/vercel/satori) and [resvg](https://github.com/thx/resvg-js). No browser involved.
 - **`/shot`** takes real browser screenshots with Chromium: viewport, full page or a single element, light or dark.
 - **Signed URLs** so nobody else can use your instance.
 - **Disk cache** with ETags, so each image is rendered once.
