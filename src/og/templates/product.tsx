@@ -87,8 +87,7 @@ export const product = defineTemplate({
                 width: 420,
                 borderRadius: 28,
                 overflow: 'hidden',
-                border: `1px solid ${palette.border}`,
-                boxShadow: `0 30px 80px ${alpha(p.accent, 0.35)}`,
+                border: `2px solid ${alpha(p.accent, 0.45)}`,
               }}
             >
               <img src={p.image} width={420} height={486} style={{ objectFit: 'cover' }} />
@@ -100,7 +99,7 @@ export const product = defineTemplate({
                 width: 420,
                 borderRadius: 28,
                 backgroundImage: `linear-gradient(135deg, ${p.accent} 0%, ${alpha(p.accent, 0.2)} 100%)`,
-                boxShadow: `0 30px 80px ${alpha(p.accent, 0.35)}`,
+                border: `2px solid ${alpha(p.accent, 0.45)}`,
               }}
             />
           )}
