@@ -1,0 +1,17 @@
+services:
+  cardshot:
+    image: ghcr.io/whosdrix/cardshot:latest
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      SIGNING_SECRET: ${SIGNING_SECRET:-}
+      CACHE_TTL: 604800
+      SHOT_CONCURRENCY: 2
+    volumes:
+      - cardshot-cache:/data
+    shm_size: 512mb
+    restart: unless-stopped
+
+volumes:
+  cardshot-cache:
