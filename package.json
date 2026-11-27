@@ -1,6 +1,6 @@
 {
   "name": "cardshot",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Self-hosted OG images and website screenshots. One container, two endpoints, beautiful templates.",
   "license": "MIT",
   "author": "whosdrix",
