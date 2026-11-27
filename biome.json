@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!dist", "!.cache", "!coverage"]
+    "includes": ["**", "!dist", "!.cache", "!coverage", "!CHANGELOG.md"]
   },
   "formatter": {
     "indentStyle": "space",
