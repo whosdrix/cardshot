@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.6.9",
-    "@types/node": "^22.20.7",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.3.3",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
