@@ -1,0 +1,16 @@
+name: Template request
+description: Suggest a new social card template
+labels: [template]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should the template show?
+      description: A sketch, screenshot or link to a card you like helps a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: params
+    attributes:
+      label: Parameters
+      placeholder: title, author, date, cover image...
